@@ -10,7 +10,6 @@ C0 vdd 0 5.3118f
 **FLOATING
 
 .include ami05.txt
-* .include C5_models.txt
 
 Vpower vdd gnd 3.3
 Vin A gnd pulse(0, 3.3, 100p, 50p, 50p, 450p, 1000p)

@@ -5,6 +5,7 @@ MAGIC_PATH="/usr/local/lib/magic"
 
 # 2. Extract and decompress the scmos technology file by using `tar` command
 tar -xvzf 2002a.tar.gz
+rm 2002a.tar.gz
 
 # 3. copy to the system directory
 sudo mkdir -p ${MAGIC_PATH}/sys/current && sudo cp -r 2002a/* ${MAGIC_PATH}/sys/current/
@@ -13,7 +14,7 @@ sudo mkdir -p ${MAGIC_PATH}/sys/current && sudo cp -r 2002a/* ${MAGIC_PATH}/sys/
 mkdir -p ~/magic_ws
 
 ## move spice model file for pfet and nfet
-mv ami05.txt ~/magic_ws
+mv * ~/magic_ws
 
 #5. Install required packages for magic and ngspice
 sudo apt-get update

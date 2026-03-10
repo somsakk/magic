@@ -7,9 +7,6 @@ MAGIC_PATH="/usr/local/lib/magic"
 tar -xvzf 2002a.tar.gz
 rm 2002a.tar.gz
 
-# 3. copy to the system directory
-sudo mkdir -p ${MAGIC_PATH}/sys/current && sudo cp -r 2002a/* ${MAGIC_PATH}/sys/current/
-
 # 4. create working space for our magic files
 mkdir -p ~/magic_ws
 
@@ -44,6 +41,8 @@ echo "Magic version is $(magic --version)"
 # 8. copy tutorial files to local magic_ws, so that tutorial files can be edited.
 cp -r ${MAGIC_PATH}/tutorial/ ~/magic_ws
 
+# 9. copy the technology file to the system directory
+sudo mkdir -p ${MAGIC_PATH}/sys/current && sudo cp -r ~/magic_ws/2002a/* ${MAGIC_PATH}/sys/current/
 
 
 

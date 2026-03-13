@@ -10,10 +10,10 @@ rm 2002a.tar.gz
 # 4. create working space for our magic files
 mkdir -p ~/magic_ws
 
-## move spice model file for pfet and nfet
+## copy spice model file for pfet and nfet to our working space in magic_ws. 
 cp -r * ~/magic_ws
 
-#5. Install required packages for magic and ngspice
+#5. Install required packages for magic and ngspice. 
 sudo apt-get update
 sudo apt-get install m4 tcsh csh libx11-dev tcl-dev tk-dev libcairo2-dev libncurses5-dev ngspice -y
 

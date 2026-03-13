@@ -6,7 +6,8 @@ M1000 Z A gnd Gnd nfet w=10 l=2
 +  ad=50p pd=30u as=50p ps=30u
 M1001 Z A vdd vdd pfet w=20 l=2
 +  ad=100p pd=50u as=100p ps=50u
-C0 vdd 0 5.3118f ;**FLOATING
+C0 vdd 0 5.3118f 
+;**FLOATING
 
 .include ami05.txt
 

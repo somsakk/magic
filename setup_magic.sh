@@ -11,7 +11,7 @@ rm 2002a.tar.gz
 mkdir -p ~/magic_ws
 
 ## move spice model file for pfet and nfet
-mv * ~/magic_ws
+cp -r * ~/magic_ws
 
 #5. Install required packages for magic and ngspice
 sudo apt-get update

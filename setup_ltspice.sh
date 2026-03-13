@@ -8,7 +8,7 @@ sudo dpkg --add-architecture i386
 sudo apt update
 
 # Install Wine: Install Wine and necessary 32-bit libraries
-sudo apt install wine wine32 wine64 libwine:i386 wget
+sudo apt install wine wine32 wine64 libwine:i386 wget -y
 
 # Download LTspice: Download the Windows installer (.exe) from Analog Devices
 cd /tmp
@@ -21,6 +21,6 @@ wine LTspice64.exe
 mkdir -p ~/ltspice_ws
 
 # To start LTSpice, simply run:
-wine ~/.wine/drive_c/Program\ Files/LTC/LTspiceXVII/XVIIx64.exe
+# wine ~/.wine/drive_c/Program\ Files/LTC/LTspiceXVII/XVIIx64.exe
 
 # A shortcut should appear on Desktop as well. Or you may call LTSpice from Program.

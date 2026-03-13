@@ -20,6 +20,7 @@ sudo apt-get install m4 tcsh csh libx11-dev tcl-dev tk-dev libcairo2-dev libncur
 #6. Clone the magic source
 git clone https://github.com/RTimothyEdwards/magic
 mv magic ~/git_magic
+
 cd ~/git_magic
 
 # 7. Configure and compile from source
@@ -43,7 +44,6 @@ cp -r ${MAGIC_PATH}/tutorial/ ~/magic_ws
 
 # 9. copy the technology file to the system directory
 sudo mkdir -p ${MAGIC_PATH}/sys/current && sudo cp -r ~/magic_ws/2002a/* ${MAGIC_PATH}/sys/current/
-
 
 
 

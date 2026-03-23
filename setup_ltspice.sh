@@ -8,7 +8,7 @@ sudo dpkg --add-architecture i386
 sudo apt update
 
 # Install Wine: Install Wine and necessary 32-bit libraries
-sudo apt install wine wine32 wine64 libwine:i386 wget -y
+sudo apt install wine-stable wine wine32 wine64 libwine:i386 wget -y
 
 # Download LTspice: Download the Windows installer (.exe) from Analog Devices
 cd /tmp
